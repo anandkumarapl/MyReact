@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i id="res"></i><br>
+    <button onclick="pop()">pop</button>
+    <button onclick="push()">push</button>
+    <button onclick="slice()">slice</button>
+    <button onclick="reverse()">reverse</button>
+    <button onclick="shift()">shift</button>
+</body>
+<script>
+    var fruit=["apple","bannana","Mango"];
+    var vagitable=["onion","cucumber","potato"];
+    var shop=fruit.concat(vagitable);
+    // document.write(shop);
+    // var flag=Array.isArray(fruit);
+    // document.write("<h1>"+flag+"</h1>");
+    // var index=vagitable.indexOf("potato");
+    // document.write(index);
+var demo=shop;
+document.getElementById("res").innerText=demo;
+function pop(){
+    demo.pop();
+document.getElementById("res").innerText=demo;
+}
+function push(){
+    var x=prompt("Please enter a fruit");
+    demo.push(x);
+document.getElementById("res").innerText=demo;
+}
+function slice(){
+    var z=prompt("Please enter a fruit");
+    var x=demo.slice(z);
+    document.getElementById("res").innerText=x;
+}
+function reverse(){
+    demo.reverse();
+    document.getElementById("res").innerText=demo;
+}
+function shift(){
+    demo.shift();
+    document.getElementById("res").innerText=demo;
+}
+</script>
+</html>

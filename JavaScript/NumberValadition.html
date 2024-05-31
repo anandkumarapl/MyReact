@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Input Number <input type="text" id="inp" onkeyup="check(this)"><br><br>
+   <div id="res"></div>
+</body>
+<script>
+    
+    document.getElementById("res").style.color="red";
+    function check(elem){
+        if(isNaN(elem.value)){
+    document.getElementById("res").innerHTML="Enter Number Only";
+    document.getElementById("inp").style.color="red";
+}
+else{
+    document.getElementById("res").innerHTML="";
+    document.getElementById("inp").style.color="green";
+    if(elem.value.length>10){
+document.getElementById("res").innerHTML="Plese Enter only ten digit";
+    }
+   
+}
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="removes(this)">Click</button>
+</body>
+<script>
+    var person={
+        firstName:"Anand",
+        secondName:"Pal",
+        fullName:function(){
+            return this.firstName+this.secondName;
+        }
+    };
+    document.write("<h1>"+person.fullName())
+        function removes(elem){
+            elem.display.style="none";
+        }
+    </script>
+</html>

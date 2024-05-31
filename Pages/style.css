@@ -1,0 +1,28 @@
+*{
+    margin: auto;
+    overflow: hidden;
+}
+.main{
+    background-color: aquamarine;
+    border: solid black;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(156, 97, 246);
+    justify-content: space-around;
+    display: flex;
+    padding: 20px;
+}
+.ul{
+    list-style: none;
+}
+.navlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.navlink li{
+    margin: 0px 20px;
+}

@@ -1,0 +1,9 @@
+.main{
+    border: solid black 3px;
+    min-height: 100px;
+    max-height: 400px;
+    overflow: scroll;
+    max-width: 200px;
+    min-width: 500px;
+
+}

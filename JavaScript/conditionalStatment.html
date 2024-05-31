@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter age<input type="text" id="x">
+    <button onclick="valid()">
+    Click</button>
+    <input type="text" id="a">
+</body>
+<script>
+    function valid(){
+        var x=document.getElementById("x").value;
+        if(x>=18){
+          var z=x+" You Can Vote";
+        document.getElementById("a").value=z;
+        }
+        else if(x<=18){
+        var z=x+"You Cant Vote";
+        document.getElementById("a").value=z;
+        }
+    }
+</script>
+</html>

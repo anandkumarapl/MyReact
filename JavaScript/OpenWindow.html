@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <button onclick="oprnWin()" style="color: rgb(38, 237, 12); border: solid 5px rgb(234, 123, 247);">oprnWin</button>
+    <button onclick="closeWin()" style="color: rgb(247, 7, 7); border: solid 5px rgb(234, 123, 247);">closeWin</button>
+    </center>
+</body>
+<script>
+    var win;
+    var win2;
+    function oprnWin(){
+        win=window.open("http://sarkariresult.com","height=200px","width=200px");
+        win2=window.open("http://sarkariresult.info");
+    }
+    function closeWin(){
+        win.close();
+        win2.close();
+    }
+</script>
+</html>

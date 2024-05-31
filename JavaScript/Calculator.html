@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        border: solid rgb(0, 0, 0);
+        color: brown;
+        height: 600px;
+        width: 300px;
+        font-size: 30px;
+        margin: auto;
+        background-color: aqua;
+    }
+h1{
+    text-align: center;
+}
+    #opt{
+        background-color: rgb(34, 180, 131);
+        color: brown;
+        height: 30px;
+        width: 290px;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    #x{
+        background-color: aquamarine;
+        color: red;
+        height: 30px;
+        width: 290px;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+     #y{
+        background-color: aquamarine;
+        color: red;
+        height: 30px;
+        width: 290px;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    #answer{
+        background-color: rgb(240, 142, 142);
+        color: rgb(195, 232, 9);
+        height: 30px;
+        width: 290px;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+button{
+    color: blue;
+    background-color: burlywood;
+    height: 35px;
+        width: 150px;
+        font-size: 30px;
+        margin-top: 5px;
+}
+</style>
+<body>
+    <div class="main">
+    <h1>Simple Calculator</h1>
+    <center>
+    <input type="text" id="x" name="x" placeholder="Enter Number"><br>
+   <select  id="opt" style="font-size: 30px;">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+   </select><br>
+    <input type="text" id="y" name="y" placeholder="Enter Number"><br>
+    <button onclick="cal()">
+    ** Click **
+    </button><br>
+    <input type="text" id="answer" placeholder="Answer">
+</center>
+</div>
+</body>
+<script>
+function cal(){1
+    var val1=document.getElementById("x").value;
+    var val2=document.getElementById("y").value;
+    var opt=document.getElementById("opt").value;
+    if(opt=='+'){
+        var answer=parseInt(val1) + parseInt(val2);
+    }
+    if(opt=='-'){
+        var answer=parseInt(val1) - parseInt(val2);
+    }
+    if(opt=='*'){
+        var answer=parseInt(val1) * parseInt(val2);
+    }
+    if(opt=='/'){
+        var answer=parseInt(val1) / parseInt(val2);
+    }
+    document.getElementById("answer").value=answer;
+}
+</script>
+</html>

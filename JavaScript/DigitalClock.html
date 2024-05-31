@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: red;
+        font-size: 70px;
+        font-family: fantasy;
+    }
+    h2{
+        text-align: center;
+        color: rgb(119, 214, 31);
+        font-size: 70px;
+        font-family: fantasy;
+    }
+</style>
+<body onload="watch()">
+    <h1></h1>
+    <h2></h2>
+</body>
+<script>
+    function watch(){
+        var d=new Date();
+        var t=d.getHours();
+        var m=d.getMinutes();
+        var s=d.getSeconds();
+        var session="AM";
+        if(t>12){
+           session="PM";
+           document.getElementsByTagName("h2")[0].innerHTML=session;
+        }
+        if(t>12){
+           t=t-12;
+        }
+        t=t<10 ? "0"+t : t;
+        m=m<10 ? "0"+m : m;
+        s=s<10 ? "0"+s : s;
+var time=t+":"+m+":"+s;
+document.getElementsByTagName("h1")[0].innerHTML=time;
+ setTimeout(watch,1000);
+ }
+</script>
+</html>

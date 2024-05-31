@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i id="res"></i><br>
+    <button onclick="gdate()">Get Date</button>
+    <button onclick="getyear()">Get Year</button>
+    <button onclick="getmonth()">Get Month</button>
+    <button onclick="getdate()">Get Date</button>
+    <button onclick="gethours()">Get Hours</button>
+    <button onclick="getminutes()">Get Minutes</button>
+    <button onclick="getseconds()">Get Seconds</button>
+    <button onclick="gettime()">Get Time</button>
+</body>
+<script>
+    var date=new Date;
+    function gdate(){
+        document.getElementById("res").innerHTML=date;
+    }
+    function getyear(){
+        document.getElementById("res").innerHTML=date.getFullYear();
+    }
+    function getmonth(){
+        var arr=["January","Febaruary","March","April","May","June","July","August","September","October","Novmber","December"];
+        document.getElementById("res").innerHTML=arr[date.getMonth()];
+    }
+    function getdate(){
+        document.getElementById("res").innerHTML=date.getDate();
+    }
+    function gethours(){
+        document.getElementById("res").innerHTML=date.getHours();
+    }
+    function getminutes(){
+        document.getElementById("res").innerHTML=date.getMinutes();
+    }
+    function getseconds(){
+        document.getElementById("res").innerHTML=date.getSeconds();
+    }
+    function gettime(){
+        document.getElementById("res").innerHTML=date.getTime();
+    }
+</script>
+</html>

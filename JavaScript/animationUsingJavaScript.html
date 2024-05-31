@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .yello{
+        background-color: yellow;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+    }
+    #red{
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+       
+    }
+
+</style>
+<body>
+    <br>
+    <button onclick="move()">Click</button>
+    <br>
+    <br>
+    <div class="yello"></div>
+    <div id="red"></div>
+</body>
+<script>
+    function move(){
+var redElem=document.getElementById("red");
+var pos=0;
+var anime=setInterval(animate,5);
+function animate(){
+    if(pos==350){
+        clearInterval(amime);
+    }
+    else{
+        pos++;
+        redElem.style.top=pos+"px";
+        redElem.style.left=pos+"px";
+    }
+}
+    }
+</script>
+</html>

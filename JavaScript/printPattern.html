@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Print Pattern</h1>
+</body>
+<script>
+    var m=prompt("Input Number");
+    printPattern(m);
+    function printPattern(m){
+    for(var i=1;i<=m;i++){
+        for(var j=1;j<=i;j++){
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+    for(var i=m;i>=1;i--){
+        for(var j=1;j<=i-1;j++){
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+}
+</script>
+</html>

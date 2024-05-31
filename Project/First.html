@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Adventure</h1>
+        <ul class="navlink">
+            <li class="active"><a href=""></a>HOME</li>
+            <li><a href=""></a>ABOUT</li>
+            <li class="ctn"><a href=""></a>CONTACT</li>
+            <li><a href=""></a>LINK</li>
+            <li><a href=""></a>MAIL</li>
+        </ul>
+        <img src="more.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colour Ful World
+            </h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h2>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <!-- Event -->
+    <section class="events">
+       <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+        <div class="row">
+            <div class="col">
+                <img src="b.jpg" alt="" class="im">
+                <h4>Everest Camp Track</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae harum cumque rerum pariatur aliquam? Quaerat, earum odio alias voluptates qui, magnam illo sapiente rem harum quis facilis hic ex asperiores!</p>
+            <a href="" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="c.jpg" alt="" class="im">
+                <h4>Everest Camp Track</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae harum cumque rerum pariatur aliquam? Quaerat, earum odio alias voluptates qui, magnam illo sapiente rem harum quis facilis hic ex asperiores!</p>
+            <a href="" class="ctn">Learn More</a>
+            </div>
+        </div>
+       </div>
+    </section>
+    <!-- Events End -->
+    <!-- explore starts -->
+<section class="explore">
+    h
+</section>
+ <!-- Tours -->
+<section class="tours">
+<div class="row">
+    <div class="col">
+        <h1>Upcoming Events & More</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto non veritatis rerum vel cupiditate, facilis ducimus nemo hic provident, fuga sunt culpa asperiores sed minus corporis ratione ex, reprehenderit tempora.</p>
+        <a href="" class="ctn ">Learn More</a>
+    </div>
+    <div class="col">
+        <div class="image-gallery">
+            <img src="a.jpg" alt="" height="300px" width="300px">
+            <img src="b.jpg" alt=""height="300px" width="300px">
+            <img src="c.jpg" alt=""height="300px" width="300px">
+            <img src="more.png" alt=""height="300px" width="300px">
+        </div>
+    </div>
+</div>
+</section>
+    <!-- explore end -->
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlink=document.querySelector('.navlink')
+       menuBtn.addEventListener('click',()=>{
+        navlink.classList.toggle('mobile-menu')
+       })
+    </script>
+</body>
+</html>
