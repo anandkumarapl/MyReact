@@ -6,21 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="test()">Test</button>
     <h1 id="res"></h1>
+    <button onclick="test()">Test</button>
 </body>
 <script>
-    function test(){
-       try{
-        // document.writes("Hello");
-        // var num=5;
-        var number="Anand Pal";
+function test(){
+    try{
+        // document.writes("hello");
+        var number="anand kumar pal";
         var x=number.toUpperCase();
-        alert(x);
-       }
-       catch(err){
-        document.getElementById("res").innerHTML=err;
-       }
-    } 
+        document.write(x);
+    }
+    catch(error){
+document.getElementById("res").innerHTML=error;
+    }
+}
 </script>
 </html>
